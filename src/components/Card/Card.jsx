@@ -4,7 +4,10 @@ import "./card.css";
 
 const Card = ({ player, onPlay, index, gameEnd }) => {
   return (
-    <div className="card" onClick={() => !gameEnd && onPlay(index)}>
+    <div
+      className="card"
+      onClick={() => !gameEnd && player === "" && onPlay(index)}
+    >
       <Icon name={player == "X" ? "cross" : player == "O" ? "circle" : ""} />
     </div>
   );

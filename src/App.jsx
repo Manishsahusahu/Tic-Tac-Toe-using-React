@@ -1,8 +1,8 @@
 import "./App.css";
-import Count from "./Count";
+import Grid from "./components/Grid/Grid";
 
 function App() {
-  return <Count />;
+  return <Grid numberOfCards={9} />;
 }
 
 export default App;
